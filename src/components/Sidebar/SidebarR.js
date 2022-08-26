@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { Navlinks, NavlinksR } from "../../data/dummy";
 
-export default function SidebarS() {
+export default function SidebarR() {
   const [collapseShow, setCollapseShow] = React.useState("hidden");
   const router = useRouter();
   return (
