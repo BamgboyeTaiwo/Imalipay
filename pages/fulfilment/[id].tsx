@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { Customerscust, CustomersFulfilments } from "../../src/data/dummy";
 
-export default function fulfilmentid() {
+export default function Fulfilmentid() {
   const { asPath, pathname } = useRouter();
   const [customerdata, setcustomerdata] = useState({});
   console.log(asPath.split("/")[2]);
