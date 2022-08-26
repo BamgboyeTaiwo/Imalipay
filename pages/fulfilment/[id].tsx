@@ -4,7 +4,7 @@ import { Customerscust, CustomersFulfilments } from "../../src/data/dummy";
 
 export default function Fulfilmentid() {
   const { asPath, pathname } = useRouter();
-  const [customerdata, setcustomerdata]:any = useState();
+  const [customerdata, setcustomerdata]:any = useState({});
   console.log(asPath.split("/")[2]);
   const path = asPath.split("/")[2];
 
@@ -31,7 +31,7 @@ export default function Fulfilmentid() {
               <img src="/AvatarOR.png" alt="" srcSet="" width="50px" />
             </div>
             <div className="my-auto mx-2">
-              <p className="text-xs text-[#344054]">{customerdata?.name}</p>
+              <p className="text-xs text-[#344054]">{customerdata?.name || ''}</p>
               <p className="text-xs text-[#667085]">Customer</p>
             </div>
           </div>

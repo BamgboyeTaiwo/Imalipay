@@ -14,13 +14,13 @@ export default function Customerid() {
         setcustomerdata(items);
       }
     });
-  }, []);
+  }, [path]);
 
   return (
     <div>
       <div className=" pt-[2.5%]">
         <span className="text-sm text-[#101010]  font-inter">
-          Go Back / <span className="text-[#707070]">{customerdata.name}</span>
+          Go Back / <span className="text-[#707070]">{customerdata?.name}</span>
         </span>
       </div>
       <div className="board bg-white p-4 mt-8 sm:pb-10 lg:pb-14 flex flex-row rounded-lg">
