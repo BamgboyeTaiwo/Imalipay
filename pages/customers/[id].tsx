@@ -4,7 +4,7 @@ import { Customerscust } from "../../src/data/dummy";
 
 export default function Customerid() {
   const { asPath, pathname } = useRouter();
-  const [customerdata, setcustomerdata] = useState({});
+  const [customerdata, setcustomerdata]:any = useState();
   console.log(asPath.split("/")[2]);
   const path = asPath.split("/")[2];
 
