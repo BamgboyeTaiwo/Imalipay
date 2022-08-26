@@ -7,7 +7,7 @@ import Navbar from "../src/components/Navbar/Navbar";
 import { useRouter } from "next/router";
 import ReconSiderbar from "../src/components/Sidebar/Reconsiderbar";
 
-export default function Admin({ children }) {
+export default function Admin({ children }:any) {
   const { asPath, pathname } = useRouter();
   // console.log(asPath, pathname);
   
