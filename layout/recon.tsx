@@ -6,15 +6,16 @@ import React from "react";
 
 // import HeaderStats from "components/Headers/HeaderStats.js";
 // import FooterAdmin from "components/Footers/FooterAdmin.js";
-import SiderbarR from '../src/components/Sidebar/sidebarR'
+// import SiderbarR from '../src/components/Sidebar/sidebarR'
 
 
 import Navbar from "../src/components/Navbar/Navbar";
+import ReconSiderbar from "../src/components/Sidebar/Reconsiderbar";
 
-export default function Recon({ children }) {
+export default function Recon({ children }:any) {
   return (
     <>
-      <SiderbarR/>
+      <ReconSiderbar/>
       <div className="relative lg:ml-64 ">
         {/* <AdminNavbar /> */}
         <Navbar />
