@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-// import UserDropdown from "components/Dropdowns/UserDropdown.js";
-import UserDropdown from "../Dropdown/Userdropdown";
-
 export default function Navbar() {
   const [dropdown, setdropdown] = useState(false);
   const { asPath, pathname } = useRouter();
