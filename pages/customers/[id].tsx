@@ -31,7 +31,7 @@ export default function Customerid() {
               <img src="/AvatarOR.png" alt="" srcSet="" width="50px" />
             </div>
             <div className="my-auto mx-2">
-              <p className="text-xs text-[#344054]">{customerdata?.name}</p>
+              <p className="text-xs text-[#344054]">{customerdata.name}</p>
               <p className="text-xs text-[#667085]">Customer</p>
             </div>
           </div>
