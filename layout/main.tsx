@@ -5,9 +5,7 @@ import React from "react";
 import Sidebar from "../src/components/Sidebar/Sidebar";
 import Navbar from "../src/components/Navbar/Navbar";
 import { useRouter } from "next/router";
-import SidebarR from "../src/components/Sidebar/sidebarR";
-
-
+import ReconSiderbar from "../src/components/Sidebar/Reconsiderbar";
 
 export default function Admin({ children }) {
   const { asPath, pathname } = useRouter();
@@ -17,7 +15,7 @@ export default function Admin({ children }) {
   return (
     <>
     {
-      asPath ==='/reconcilation' ? <SidebarR/> : <Sidebar />
+      asPath ==='/reconcilation' ? <ReconSiderbar/> : <Sidebar />
     }
       
       <div className="relative lg:ml-64 ">
